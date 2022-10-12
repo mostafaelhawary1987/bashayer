@@ -1861,26 +1861,26 @@ textarea:focus {
     transform: translateX(-50%);
 }
 .condit-one{
-    padding-top: 30px;
+    padding-top: 65px;
     padding-bottom: 45px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .cont-one-title{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 335px;
-    width: 420px;
-    
-    padding: 30px;
-    border-radius: 10px;
-    margin: 15px;
 }
-.cont-one-photo{    width: 150px;
-    height: 150px;
+.cont-detials{
+    height: 230px;
+    width: 33%;
+
+}
+.cont-one-photo{  
+      width: 90px;
+    height: 90px;
     display: flex;
     align-items: center;
     background-color: #ffff;
@@ -1888,30 +1888,159 @@ textarea:focus {
     border-radius: 50%;
     border: 8px solid #968D85;
     justify-content: center;}
-.cont-one-photo img{    height: 43px;
-    width: 54px;}
+/* .cont-one-photo img{    height: 43px;
+    width: 54px;} */
     .cont-one-title p{
         font-size: 22px;
     color: #fff;
     margin-top: 30px;
     text-align: center;
     }
+    /* ----------------Member Lost--------------------- */
 
 
+.member-lost{padding-top: 40px;padding-bottom: 45px;}
+.mem-title .title-lost{
+    font-size: 19px;
+    color: #707070;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+.contact-us-send.mem{
+    margin: auto;
+    text-align: center;
+    margin-top: 38px;
+    display: block;
+    padding-bottom: 45px;
+}
+.contact-us-send.mem button{    width: 200px;
+    }
+    @media(max-width:991px) {
+        .member-fi {
+            width: 45%;}
+            .mem-co-title {
+               width: 45%;
 
+            }
+    }
+    @media(max-width:480px) {
+        .member-fi {
+            height: auto;
+            width: 100%;}
+            .mem-co-title {
+               width: 100%;}
+               .condit-one {
+                align-items: self-start;
+            }
+            .cont-detials {
+                height: auto;
+                width: 100%;
+            }
+            .member-condition-one{height: auto;}
+            .cont-one-title p{margin-top: 5px;}
+            .cont-one-title{margin-bottom: 45px;}
+            .mem-title h2 {
+                font-size: 25px;}
+    }
+/*--------------------News Page---------------------*/
+/*--------------------News Page---------------------*/
+/*--------------------News Page---------------------*/
+/*--------------------News Page---------------------*/
+/*--------------------News Page---------------------*/
+.section-news{padding-top: 55px;padding-bottom: 65px;}
+.news-sec{display: flex;
+    
+    flex-wrap: wrap;}
+.new-details{    width: 30%;
+    background-color: #F8F8F8;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 361px;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    margin: 15px
 
+;}
+.new-details a{     border-radius: 10px;
+    display: block;
+    overflow: hidden;}
 
+.new-details:hover{
+    background-color: #0F7B50;
+}
 
+.new-photo{border-radius: 10px;
+    overflow: hidden;}
+    .new-photo img{height: 246px;    min-width: 100%;}
+.new-title{display: flex;
+    padding: 0px 15px;
+    padding-top: 15px;
+    justify-content: start;}
+.new-title .ne-data{
+    margin-left: 15px;
+}
+.new-title .ne-data span{
+    font-size: 12px;
+    color: #707070;
+}
+.new-title .ne-data i{
+    color:#BD892C;
+    margin:0px 5px;
+}
+.ne-p{
+    padding: 10px 15px;
+    color: #363636;
+    font-size: 13px;
+    line-height: 21px;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+  
+}
+.new-details:hover .ne-data span{
 
+    color: #fff;
+}
+.new-details:hover .ne-p{
+    color: #fff;
+}
+@media(max-width:991px) {
+    .new-details {
+        width: 45%;}
+}
+@media(max-width:480px) {
+    .new-details {
+        width: 100%;}
+}
 
-
-
-
-
-
-
-
-
+/*--------------------New Page---------------------*/
+/*--------------------New Page---------------------*/
+/*--------------------New Page---------------------*/
+/*--------------------New Page---------------------*/
+/*--------------------New Page---------------------*/
+.post-photo img {
+    min-width: 100%;
+    height: 370px;
+}
+.post {
+    margin-bottom: 60px;
+    margin-top: 45px;
+}
+.post-date h3 {
+    font-size: 20px;
+    font-family: 'Cairo-bold';
+    margin-top: 40px;
+}
+.post-date p {
+    font-size: 18px;
+    font-family: 'Cairo-semiBold';
+    margin: 10px 0px;
+    color: #474d4f;
+    line-height: 1.7;
+    text-align: justify;
+}
 
 
 
