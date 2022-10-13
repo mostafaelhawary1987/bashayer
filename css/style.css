@@ -1403,7 +1403,10 @@ flex-direction: column;
   }
 
   .form-group label {
-    font-size: 15px;
+padding: 0  ;
+display: flex;
+}
+    /* font-size: 15px;
     font-weight: 700;
     color: #000;
     padding: 0 4px;
@@ -1416,7 +1419,7 @@ flex-direction: column;
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-}
+} */
   .form-group label > span {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -1656,6 +1659,7 @@ textarea:focus {
             color: #000;
             line-height: 2.2;
             cursor: pointer;
+            padding-right: 37px;
           }
           
           .checkbox .mark {
@@ -1685,6 +1689,7 @@ textarea:focus {
             padding: 15px;
     background-color: #f8f8f8;
     border-radius: 10px;
+    display: flex;
           }
           .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio]{
             width: 20px;
@@ -2015,6 +2020,16 @@ textarea:focus {
         width: 100%;}
 }
 
+.paginat-news{text-align: center;}
+.pagination>li>a, .pagination>li>span{color: #4c271d;}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #4c271d;
+    border-color: #4c271d;
+}
 /*--------------------New Page---------------------*/
 /*--------------------New Page---------------------*/
 /*--------------------New Page---------------------*/
@@ -2041,10 +2056,168 @@ textarea:focus {
     line-height: 1.7;
     text-align: justify;
 }
+.check-it .checkmark:after {
+    right: 8px;
+    top: 3px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .check-it input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .check-it input:checked ~ .checkmark {
+    background-color: #4a9c7b;
+    border: 1px solid #4a9c7b;
+  }
+  /* .check-it:hover input ~ .checkmark {
+    background-color: #ccc;
+  } */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .check-it input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .check-it {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+/*--------------------Benefit Register Page---------------------*/
+/*--------------------Benefit Register Page---------------------*/
+/*--------------------Benefit Register Page---------------------*/
+/*--------------------Benefit Register Page---------------------*/
+/*--------------------Benefit Register Page---------------------*/
+.benefit-register{padding-top:45px;padding-bottom: 70px;}
 
+._box {
+    width: 100%;
+    padding-right: 25px;
+}
 
+label input[type=radio],
+label input[type=checkbox] {
+    display: none;
+}
 
+.cell {
+    position: relative;
+    display: block;
+}
 
+label {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #575757;
+    font-size: 14px;
+    font-family: 'Cairo-semiBold';
+}
 
+label>span.circle {
+    position: relative;
+    top: 4px;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: inset 0px 3px 7px 0px rgb(0 0 0 / 10%); */
+    border: 1px solid rgb(209, 209, 209);
+}
 
+label>span.circle {
+    border-radius: 3px;
+}
 
+label input[type=radio]:checked~span.circle {
+    border-color: rgb(209, 209, 209);
+}
+
+label input[type=radio]:checked~span.circle:after {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    display: inline-block;
+    background-color:#0F7B50;
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    left: 3px;
+}
+.frm{    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+    .frm.form-group label{margin-bottom: 0;}
+
+/*--------------------Satisfaction Page---------------------*/
+/*--------------------Satisfaction Page---------------------*/
+/*--------------------Satisfaction Page---------------------*/
+/*--------------------Satisfaction Page---------------------*/
+/*--------------------Satisfaction Page---------------------*/
+.satisfaction{padding-top:45px ;
+padding-bottom: 70px;
+}
+.satisfy p{
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Cairo-semiBold';
+    line-height: 32px;
+}
+@media(max-width:768px) {
+    .satisfy .frm{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    height: 100px !important;
+     }
+    .satisfy .frm h4{
+        margin-bottom: -20px;
+        font-size: 16px;
+        width: 100%;}
+}
+@media(max-width:480px) {
+    .satisfy .frm {
+        display: inline-table;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .satisfy .frm h4{
+        margin-bottom: 15px;
+        line-height: 25px;
+    }
+    .satisfy .cell{    margin-bottom: 6px;}
+    .satisfy .frm.form-group label {
+      
+        display: inline-table;
+    }
+}
